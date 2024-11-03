@@ -4,10 +4,10 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 
 function CatFact() {
-  const [fact, setFact] = useState('');        // Stav pro uložení faktu o kočkách
-  const [error, setError] = useState(null);     // Stav pro chybu
+  const [fact, setFact] = useState('');   
+  const [error, setError] = useState(null); 
 
-  // Funkce pro načtení faktu o kočkách
+
   const getCatFact = () => {
     fetch('https://catfact.ninja/fact')
       .then(response => response.json())
@@ -21,7 +21,7 @@ function CatFact() {
       });
   };
 
-  // Načteme fakt o kočkách při načtení komponenty
+ 
   useEffect(() => {
     getCatFact();
   }, []);
