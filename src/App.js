@@ -30,9 +30,9 @@ function CatFact() {
     <div>
       <h2>Cat Fact</h2>
       {error ? (
-        <p>{error}</p>                          // Zobrazíme chybu, pokud existuje
+        <p>{error}</p> 
       ) : (
-        <p>{fact}</p>                           // Zobrazíme fakt, pokud je dostupný
+        <p>{fact}</p> 
       )}
       <button onClick={() => getCatFact()}>Get New Cat Fact</button>
     </div>
